@@ -30,6 +30,13 @@ public class ChangeScene : MonoBehaviour
       
     }
 
+    public void SphereOfAntigravity()
+    {
+        _indexCurrentScene = _getCurrentBuildIndex();
+        SceneManager.LoadScene(2);
+        SceneManager.UnloadSceneAsync(_indexCurrentScene);
+
+    }
 
     private int _getCurrentBuildIndex()
     {
